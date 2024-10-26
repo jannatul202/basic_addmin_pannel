@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="frontend/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <title>Addmin Pannel || articallist</title>
+</head>
+<body>
+   <div class="templete">
+     <!----nav section start-------->
+     <header class="header_section clear">
+      <h3>Admin Area</h3>
+      <nav class="main_menu clear">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="user.html">User</a></li>
+          <li><a href="update.html">Update</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!----nav section end-------->
+
+    <!----nav section start-------->
+    <section class="content_section clear">
+      <aside class="left_sidebar clear">
+
+        <div class="same_sidebar">
+          <h2>Theame Option</h2>
+          <ul>
+            <li><a href="social.html">Social Option</a></li>
+            <li><a href="header.html">Header Option </a></li>
+            <li><a href="footer.html">Footer Option</a></li>
+          </ul>
+        </div>
+
+        <div class="same_sidebar">
+          <h2>Category Option</h2>
+          <ul>
+            <li><a href="addcategory.html">Add Category</a></li>
+          </ul>
+        </div>
+        
+        <div class="same_sidebar">
+          <h2>Article Option</h2>
+          <ul>
+            <li><a href="addartical.html" id="active_side_menu">Add Article</a></li>
+            <li><a href="articallist.html">Article list</a></li>
+          </ul>
+        </div>
+
+      </aside>
+
+      
+      <article class="main_content clear">
+       <div class="content clear">
+        <h2>Add Article</h2>
+        <hr>
+        <form action="" method="">
+
+          <div class="form_main clear mt_2">
+            <div class="label_div clear">
+              <label for="title">Title</label>
+            </div>
+            <div class="input_div clear">
+              <input type="text" id="title" name="title" placeholder="Title">
+            </div>
+          </div>
+
+          <div class="form_main clear mt_2">
+            <div class="label_div clear">
+              <label for="description">Description</label>
+            </div>
+            <div class="input_div clear">
+              <textarea name="editor"></textarea>
+                <!-- <script>
+                  CKEDITOR.replace('ckeditor');
+                </script> -->
+            </div>
+          </div>
+
+          <div class="form_main clear mt_2">
+            <div class="label_div clear">
+              <label for="category">Category</label>
+            </div>
+            <div class="input_div clear">
+                <select>
+                  <option value="health">Health</option>
+                  <option value="sports">Sports</option>
+                  <option value="politicts">Politicts</option>
+                  <option value="health">Health</option>
+                  <option value="weather">Weather</option>
+                </select>
+            </div>
+          </div>
+
+
+          <div class="form_main clear mt_2">
+            <div class="label_div clear">
+              <label for="tag">Tags</label>
+            </div>
+            <div class="input_div clear">
+              <input type="text" id="tag" name="tag" placeholder="Enter tags seperaed by comma">
+            </div>
+          </div>
+
+          <div class="form_main clear mt_2">
+            <div class="label_div clear">
+              <label for="image">Upload Image</label>
+            </div>
+            <div class="input_div clear">
+              <input type="file" id="image" name="image">
+            </div>
+          </div>
+
+          <div class="submit">
+            <button type="submit" class="submit_btn mt_2">Add Article</button>
+          </div>
+          
+        </form>
+
+       </div>
+      </article>
+
+    </section>
+    <!----nav section end-------->
+
+    <!----nav section start-------->
+    <footer class="footer_section clear">
+      <h3>Copyright copy&; 2024 basic_admin_pannel_for_web</h3>
+    </footer>
+
+    <!----nav section end-------->
+   </div>
+
+    <!----nav section start-------->
+    <!----nav section end-------->
+
+    <!----nav section start-------->
+    <!----nav section end-------->
+
+    <!----nav section start-------->
+    <!----nav section end-------->
+    
+
+    <!--------js here-------------->
+    <!-- <script src="frontend/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="frontend/js/jquery-3.7.1.min.js"></script>  -->
+    <script src="frontend/js/custom.js"></script> 
+    
+</body>
+</html>

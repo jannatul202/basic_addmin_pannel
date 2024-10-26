@@ -1,0 +1,283 @@
+/*
+  Theme Name: bootstrap_project_blog
+  Support: 
+  Description:   
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Google Fonts
+02. Variable CSS start
+03. common css
+04. header_sec css
+05. nav_sec css
+
+============================
+*/
+/*=============================
+  01. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*=============================
+ 02. Variable CSS start
+===============================*/
+ :root {
+    --body-font-family: "Poppins", sans-serif;
+    --primary-color: #277273;
+    --primary-color-2: #2b9394;
+    --border-color:#255d5e;
+    --secondary-color: #224f4f;
+    --secondary-color-2: #36aeaf;
+    --black:#180202;
+    --link-hover:#444;
+    --white:#ffffff;
+    --off-white:#ddd;
+    --con-2:#9f8f8f;
+    --manu-bg:#797474;
+    --transition: 0.4s ease-in-out;
+}
+  
+/* =================================
+03. common css
+=====================================*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;  
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--body-font-family);
+    line-height: var(--body-line-height);
+    color: var(--black);
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    font-weight: 400;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+table{
+    border: none;
+}
+#active_menu{
+    background: var(--primary-color-2);
+    transition: var(--transition);
+}
+#active_side_menu{
+    color: var(--link-hover);
+    transition: var(--transition);
+    background: #3fbec0;
+}
+.templete{
+    width: 1200px;
+    margin: 0 auto;
+}
+.clear{
+    overflow: hidden;
+}
+.mt_2{
+    margin-top: 20px;
+}
+.mt_3{
+    margin-top: 30px;
+}
+.mt_4{
+    margin-top: 40px;
+}
+.mt_5{
+    margin-top: 50px;
+}
+/* =================================
+04. header_section css
+=====================================*/
+.header_section{
+    background: var(--primary-color);
+}
+.header_section h3 {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+.header_section .main_menu{}
+.header_section .main_menu ul{
+    float: right;
+}
+.header_section .main_menu ul li{
+    float: left;
+    margin-left: 1px;
+}
+.header_section .main_menu ul li a {
+    color: var(--white);
+    display: block;
+    background:var(--secondary-color) ;
+    padding: 4px 10px;
+    transition: var(--transition);
+}
+.header_section .main_menu ul li a:hover{
+    background: var(--primary-color-2);
+    transition: var(--transition);
+}
+
+
+/* =================================
+05. content_section css
+=====================================*/
+.content_section{}
+.content_section .left_sidebar{
+    background: var(--primary-color);
+    float: left;
+    width: 250px;
+}
+.content_section .left_sidebar .same_sidebar {
+    margin-bottom: 25px;
+}
+.content_section .left_sidebar .same_sidebar h2 {
+    font-size: 20px;
+    background: var(--primary-color-2);
+    color: var(--off-white);
+    padding: 4px 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+.content_section .left_sidebar .same_sidebar ul{}
+.content_section .left_sidebar .same_sidebar ul li{
+    border-bottom: 1px solid var(--secondary-color-2);
+}
+.content_section .left_sidebar .same_sidebar ul li:last-child{
+    border-bottom: none;
+}
+.content_section .left_sidebar .same_sidebar ul li a{
+    color: var(--white);
+    display: block;
+    background:var(--primary-color-2) ;
+    padding: 4px 10px;
+    transition: var(--transition);
+}
+.content_section .left_sidebar .same_sidebar ul li a:hover {
+    color: var(--link-hover);
+    transition: var(--transition);
+    background: #3fbec0;
+}
+.content_section .main_content {
+    float: right;
+    width: 910px;
+}
+/* =================================
+06. footer_section css
+=====================================*/
+.footer_section{
+    padding: 20px 10px;
+    background: var(--primary-color);
+}
+.footer_section h3{
+    color: var(--white);
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+}
+/* =================================
+07. use.html css
+=====================================*/
+.main_content{}
+.main_content .content{
+    margin-top: 20px;
+}
+.main_content .content .form_main{}
+.main_content .content .form_main .label_div{
+    float: left;
+    width: 200px;
+}
+.main_content .content .form_main .input_div{
+    /*float: right;
+    width: 400px;
+    text-align: right;*/
+}
+.main_content .content .submit{
+    width: 480px;
+    float: right;
+}
+.submit button.submit_btn {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 5px 10px; 
+}
+.input_div input{
+    padding: 5px 10px;
+    width: 300px;
+}
+.main_content{}
+.main_content .content .form_main textarea{
+    width: 300px;
+}
+.main_content .content .form_main .input_div select {
+    width: 300px;
+    padding: 5px 10px;
+}
+input[type="file"] {
+    border: 1px solid;
+}
+/* =================================
+08. cat_show_table css
+=====================================*/
+.cat_show_table{
+}
+.cat_show_table table{
+    border-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary-color);
+    width: 910px;
+}
+.cat_show_table h2{}
+.cat_show_table tr th {
+    padding: 10px;
+    text-align: center;
+    background: #5ea2a3;
+}
+.cat_show_table tr td {
+    padding: 20px 5px;
+    text-align: center;
+}
+.cat_show_table tr td a {
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    color: var(--white);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.cat_show_table tr td a.update{
+    background:var(--primary-color); 
+}
+.cat_show_table tr td a.delete{
+    background: red;
+    padding: 5px 15px;
+}
+.d_clr{
+    background: #cde9e9;
+}
+/* =================================
+09. user_login css
+=====================================*/
+.main_content.user_login {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 18px #cbb4b4;
+}
+.user_login .content h2{
+  border-bottom:1px solid;
+}
